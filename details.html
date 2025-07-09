@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload Image</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header class="navbar">
+    <h1>RICE TYPE CLASSIFICATION</h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/details">Predict</a>
+    </nav>
+  </header>
+  <div class="hero">
+  <div class="form-section">
+    <h2>Upload Your Image</h2>
+    <form method="POST" enctype="multipart/form-data" action="/predict">
+      <input type="file" name="file" style="color: black;"><br><br>
+      <input type="submit" value="Upload" class="btn">
+    </form>
+  </div></div>
+</body>
+</html>
