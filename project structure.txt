@@ -1,0 +1,24 @@
+Rice_Type_Detection/
+│
+├── Data/
+│   ├── Training/         # Place your training images here
+│   └── Validation/       # (optional for validation)
+│
+├── forms/
+│   └── __init__.py       # If needed for form inputs (Flask-based)
+│
+├── static/
+│   └── style.css         # Add any styles
+│
+├── templates/
+│   ├── index.html
+│   ├── details.html
+│   └── results.html
+│
+├── Training/
+│   ├── train.py          # Convert Kaggle notebook code to script here
+│   ├── rice.h5           # Saved model (from training)
+│   └── rice-classification.ipynb (optional)
+│
+├── app.py                # Flask app for running predictions
+└── Rice Type Classification.docx (optional documentation)
