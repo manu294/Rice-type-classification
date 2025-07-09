@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prediction Result</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header class="navbar">
+    <h1>RICE TYPE CLASSIFICATION</h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/details">Predict</a>
+    </nav>
+  </header>
+
+  <div class="result-container">
+    <h2>Prediction Result</h2>
+    <p><strong>Predicted Rice Type:</strong> {{ label }}</p>
+    <img src="{{ url_for('static', filename=image_file) }}" alt="Uploaded Image">
+  </div>
+</body>
+</html>
